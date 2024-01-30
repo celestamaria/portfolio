@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    }
+    body{
+        width:100%;
+        background-image: url(img/Untitled.jpg);  
+    }
+    .nav-link {
+        /* float: right; */
+        /* display: block; */
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 200px;
+        background: #ffffff;
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    h2{
+       font-family: 'Righteous', cursive;
+       font-size: 60px;
+       color: #720e91;
+   }
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+        }
+    #navbar li a{
+       font-family: 'Cormorant Garamond', serif;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 600;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+    }
+    #navbar li a:hover,  
+    #navbar li a.active{
+        color: #720e91;;}
+   
+        #navbar li a.active::after, 
+        #navbar li a:hover::after{
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: #720e91;;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        } 
+/*body in the middle*/
+#content{
+    text-align: center;
+    padding-top: 100px;
+}        
+.body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Playfair', serif;
+    font-size: 30px;
+}     
+.body span{
+    font-family: 'Playfair', serif;
+    font-size: 70px;
+    color: #720e91;
+}
+.body p{
+    font-family: 'Playfair', serif;
+    font-size: 30px;
+}
+.body h1{
+    font-family: 'Playfair', serif;
+    font-size:60px
+}
+
+/*projects part*/
+#projects {
+    text-align: center;
+    padding-top: 500px;
+}
+
+.team1:hover {
+    transform: scale(1.05);
+}
+
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+    background-color:#f2dbf7;
+}
+.class .paragraph{
+    font-size: 2rem;
+    color: #434242;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.class .h2{
+    font-size: 3.5rem;
+    color: #222;
+    font-weight: 700;
+    padding-bottom:50px;
+    text-align: center;
+}
+.class .classMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .classMenu .team1{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow:
+    2.5px 1.7px 2.7px rgba(0, 0, 0, 0.022),
+  6.3px 4.3px 6.9px rgba(0, 0, 0, 0.031),
+  12.8px 8.9px 14.2px rgba(0, 0, 0, 0.039),
+  26.3px 18.3px 29.2px rgba(0, 0, 0, 0.048),
+  72px 50px 80px rgba(0, 0, 0, 0.07)
+;
+
+}
+.class .classMenu  .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.class .classMenu.team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+} 
+.class .classMenu .team1 .teamDetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails h4{
+ color: #212529;
+ font-size: 1.7rem;
+ text-align: center;
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails p{
+ color: #212529;
+ font-size: 1.1rem;
+ text-align: center;
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails p span{
+ font-weight: 700;
+ font-size: 1.1rem;
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails .num h5{
+ background: #FF3F33;
+color: var(--black);
+ font-size: 1rem;
+ width: 3.5rem;
+ height: 3.5rem;
+ line-height: 3.5rem;
+ text-align: center;
+ border-radius: 50%;
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails .num{
+    font-size: 2.2rem;
+    color:var(--black);
+    padding-top: 1rem;
+}
+.class .classMenu .team1 .pro {
+    padding: 15px 30px 30px 30px;
+}
+.class .classMenu .team1 .pro p{
+font-size: 1.5rem;
+font-weight: bold;
+color: #3147F4;
+}
+
+/*about me*/
+
+.artist{
+    background-color: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.artist .about{
+    width: 39%;
+}
+.artist .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+.artist .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.artist .people{
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.artist .people .team1{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow:
+    2.5px 1.7px 2.7px rgba(0, 0, 0, 0.022),
+  6.3px 4.3px 6.9px rgba(0, 0, 0, 0.031),
+  12.8px 8.9px 14.2px rgba(0, 0, 0, 0.039),
+  26.3px 18.3px 29.2px rgba(0, 0, 0, 0.048),
+  72px 50px 80px rgba(0, 0, 0, 0.07)
+;
+
+}
+.artist .people .team2{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow:
+    2.5px 1.7px 2.7px rgba(0, 0, 0, 0.022),
+  6.3px 4.3px 6.9px rgba(0, 0, 0, 0.031),
+  12.8px 8.9px 14.2px rgba(0, 0, 0, 0.039),
+  26.3px 18.3px 29.2px rgba(0, 0, 0, 0.048),
+  72px 50px 80px rgba(0, 0, 0, 0.07)
+;
+
+}
+.artist .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+} 
+
+.artist .people .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.artist .people .team1 .name, .artist .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.artist .people .team1 .name{
+    padding: 5px 20px 0 20px;
+}
+.artist .people .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: safe center;
+    padding-bottom: 10px;
+}    
+.artist .people .team1 .name h4{
+        color: #212529;
+        font-size: 1.5rem;
+    }
+
+.artist .people .team1 .name i{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+.artist .people.team1 .pro{
+    padding: 0 20px 5px 20px;
+}
+.team1:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 600px){
+    h2{
+        font-size: 20px;
+   
+    }
+
+    #content{
+        text-align: center;
+        padding-top: 50px;
+    }    
+}
